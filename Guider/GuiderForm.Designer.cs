@@ -32,8 +32,8 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.lblWelcome = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lblSetting = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lblComplete = new System.Windows.Forms.Label();
             this.btnNext = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
@@ -59,6 +59,7 @@
             this.tabControl.Size = new System.Drawing.Size(600, 386);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl.TabIndex = 0;
+            this.tabControl.TabStop = false;
             // 
             // tabPage1
             // 
@@ -66,7 +67,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 5);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(592, 408);
+            this.tabPage1.Size = new System.Drawing.Size(592, 377);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -76,7 +77,7 @@
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Location = new System.Drawing.Point(3, 3);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(80, 17);
+            this.lblWelcome.Size = new System.Drawing.Size(99, 20);
             this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "欢迎来到向导";
             // 
@@ -86,10 +87,19 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 5);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(592, 408);
+            this.tabPage2.Size = new System.Drawing.Size(592, 377);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lblSetting
+            // 
+            this.lblSetting.AutoSize = true;
+            this.lblSetting.Location = new System.Drawing.Point(3, 3);
+            this.lblSetting.Name = "lblSetting";
+            this.lblSetting.Size = new System.Drawing.Size(129, 20);
+            this.lblSetting.TabIndex = 0;
+            this.lblSetting.Text = "在这里做一些配置";
             // 
             // tabPage3
             // 
@@ -102,21 +112,12 @@
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // lblSetting
-            // 
-            this.lblSetting.AutoSize = true;
-            this.lblSetting.Location = new System.Drawing.Point(3, 3);
-            this.lblSetting.Name = "lblSetting";
-            this.lblSetting.Size = new System.Drawing.Size(104, 17);
-            this.lblSetting.TabIndex = 0;
-            this.lblSetting.Text = "在这里做一些配置";
-            // 
             // lblComplete
             // 
             this.lblComplete.AutoSize = true;
             this.lblComplete.Location = new System.Drawing.Point(3, 3);
             this.lblComplete.Name = "lblComplete";
-            this.lblComplete.Size = new System.Drawing.Size(56, 17);
+            this.lblComplete.Size = new System.Drawing.Size(69, 20);
             this.lblComplete.TabIndex = 4;
             this.lblComplete.Text = "向导完成";
             // 
@@ -133,7 +134,7 @@
             // 
             // GuiderForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
             this.Controls.Add(this.btnNext);
