@@ -16,6 +16,17 @@ namespace Guider
             InitializeComponent();
         }
 
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            switch (keyData)
+            {
+                case (Keys.Tab | Keys.Control):
+                case (Keys.Tab | Keys.Shift | Keys.Control):
+                    return true;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
         private void btnNext_Click(object sender, EventArgs e)
         {
             int nextIdx = tabControl.SelectedIndex + 1;

@@ -59,7 +59,6 @@
             this.tabControl.Size = new System.Drawing.Size(600, 386);
             this.tabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl.TabIndex = 0;
-            this.tabControl.TabStop = false;
             // 
             // tabPage1
             // 
